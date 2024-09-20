@@ -1,0 +1,2 @@
+tcpdump -i enp0s3
+man -k dump traffic
