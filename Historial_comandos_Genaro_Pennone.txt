@@ -1,0 +1,79 @@
+ifconfig
+ip a
+exit
+mkdir repogit
+git clone git@github.com:banzai-ko/TP_AySO.git
+cat /etc/os-release 
+man grep
+grep HOME_URL /etc/os-release 
+grep home_url /etc/os-release 
+grep -i home_url /etc/os-release 
+whoami
+echo “Usuario=$(whoami)” > datos_usuario.txt
+ls
+cat datos
+cat datos_usuario.txt 
+mv datos_usuario.txt repogit/
+mv TP_AySO/
+ls
+mv TP_AySO/ repogit/
+ls
+cd repogit/
+ls
+mv datos_usuario.txt TP_AySO/
+ls
+cd TP_AySO/
+git config --global user.name "banzai.ko"; git config --global user.email "boxko398@gmail.com"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git add datos_usuario.txt 
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+cat /proc/cpuinfo | grep -i model_name
+cat /proc/cpuinfo 
+cat /proc/cpuinfo | grep -i modelname
+cat /proc/cpuinfo | grep -i model name
+cat /proc/cpuinfo | grep -i "model name"
+cat /proc/cpuinfo | grep -i "model name" | head -n1
+cat /proc/cpuinfo | grep -i "model name" | head -n1 >> datos_usuario.txt 
+git commit -m "feat[TP_AySO]: Cpu info to file "
+git add datos_usuario.txt 
+git commit -m "feat[TP_AySO]: Cpu info to file "
+git commit --ammend
+git commit --amend
+grep -v "nologin" /etc/passwd | head -n 10 | sort -t: -k7 > lista_ordenada
+ls
+cat lista_ordenada 
+git status
+git add lista_ordenada 
+git commit -m "ADD[TP_AySO]: Listado de usuarios ordenada "
+tcpdump -D
+tcpdump -i enp0s3
+sudo tcpdump -i enp0s3
+sudo tcpdump -i enp0s8
+
+echo tcpdump -i enp0s3 >comando_dump_net
+cat comando_dump_net 
+man -k dump traffic
+man -k dump traffic >> comando_dump_net 
+cat comando_dump_net 
+clear
+ls
+cat comando_dump_net 
+rm comando_dump_net 
+echo tcpdump -i enp0s3 >comando_dump_net
+echo "man -k dump traffic" >> comando_dump_net 
+cat comando_dump_net 
+git add comando_dump_net 
+git commit -m "ADD[TP_AySO]: Comando para Capturar y analizar el tráfico de red"
+cat << EOF >> README.md
+# TP_AySO
+
+Alumno: Genaro Pennone 
+División: 316
+Turno: Noche
+
+EOF
+
+cat README.md 
+git add README.md 
+git commit -m "DOC[TP_AySO]: Readme File"
+history -a
